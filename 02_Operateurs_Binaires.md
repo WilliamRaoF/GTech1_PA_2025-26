@@ -157,7 +157,7 @@ int main() {
     cout << "Bleu : " << (int)blue << endl;
 
     // Changer la composante bleue
-    color = (color & 0xFFFF00) | (0x99);  // Modifier la composante bleue à 0x99
+    color = (color & 0xFFFF00) | (0x000099);  // Modifier la composante bleue à 0x99
 
     cout << "Nouvelle couleur : #" << hex << color << endl;
 
