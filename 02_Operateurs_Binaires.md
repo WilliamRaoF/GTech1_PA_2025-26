@@ -12,7 +12,7 @@ Les nombres flottants sont utilisés dans de nombreux calculs nécessitant une g
 
 ### 2.1. Conversion des flottants en binaire
 
-Les nombres flottants sont composés de 32 bits (pour les `float` en C++), et ces bits sont organisés en trois parties : un bit pour le signe, 8 bits pour l'exposant, et 23 bits pour la mantisse. Manipuler directement ces bits peut permettre d'extraire des informations sur la valeur ou d'optimiser certains calculs.
+Les nombres flottants sont composés de 32 bits (pour les `float` en C++), et ces bits sont organisés en trois parties : un bit pour le signe, 8 bits pour l'exposant, et 23 bits pour la mantisse. Manipuler directement ces bits peut permettre d'extraire des informations sur la valeur ou d'optimiser certains calculs. En binaire, la mantisse représente la partie fractionnaire et significative du nombre en base 2. L’exposant, lui, indique de combien de positions il faut déplacer la virgule binaire (vers la gauche ou la droite) pour retrouver la valeur réelle.
 
 #### Exemple : Affichage des bits d'un nombre flottant
 
