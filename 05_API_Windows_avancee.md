@@ -1,7 +1,6 @@
 #  Cours avancé : Utilisation de l’API Windows et GDI pour une application graphique
 
-> Ce module approfondit la création d’interfaces Windows et la manipulation d’images (BMP/PNG)
-> dans le but de développer une application légère de **stéganographie** avec l’API Win32.
+> Ce module approfondit la création d’interfaces Windows et la manipulation d’images (BMP/PNG) avec l’API Win32.
 
 ---
 
