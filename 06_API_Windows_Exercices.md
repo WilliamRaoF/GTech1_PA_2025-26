@@ -20,7 +20,7 @@
 - Affichez un curseur différent selon la zone de la fenêtre :
   - Zone de gauche : curseur "main" (`LoadCursor(NULL, IDC_HAND)`).
   - Zone de droite : curseur "croix" (`LoadCursor(NULL, IDC_CROSS)`).
-*Indice : interceptez `WM_MOUSEMOVE` et comparez `LOWORD(lParam)` à la moitié de la largeur de la fenêtre.*
+*Indice : interceptez `WM_MOUSEMOVE` et comparez la position de la souris: `LOWORD(lParam)` à la moitié de la largeur de la fenêtre.*
 
 ---
 
