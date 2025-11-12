@@ -187,14 +187,3 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 >  **Bon réflexe :**
 > Toujours renvoyer `DefWindowProc` pour les messages non traités.
 > Cela permet à Windows de gérer le comportement par défaut (menus, focus, redimensionnement…).
-
----
-
-### 1.4  Exercice 1
-
-1. Créez une fenêtre **400x300**.
-2. Changez la couleur du fond en **bleu** (`CreateSolidBrush` + `RGB(0,0,255)`).
-3. Modifiez le titre de la fenêtre.
-
->  *Option bonus :* ajoutez une icône personnalisée avec `LoadIcon`.
-
