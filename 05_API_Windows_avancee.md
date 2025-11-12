@@ -57,7 +57,7 @@ HWND hEdit = CreateWindowEx(
 );
 
 HWND hLabel = CreateWindowEx(
-    0, L"STATIC", L"Message à cacher :",
+    0, L"STATIC", L"Zone de texte :",
     WS_VISIBLE | WS_CHILD,
     20, 40, 200, 20,
     hwnd, NULL, hInstance, NULL
