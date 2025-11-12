@@ -12,7 +12,7 @@
 ### Exercice 2 : Redimensionnement automatique
 - Créez une fenêtre de 600x400 pixels.  
 - Lorsque l’utilisateur redimensionne la fenêtre, affichez dans la barre de titre les nouvelles dimensions (exemple : `Fenêtre - 800x600`).  
-*Indice : interceptez le message `WM_SIZE` et utilisez `SetWindowText`. Largeur de la fenetre: LOWORD(lParam), hauteur de la fenetre: HIWORD(lParam)*
+*Indice : interceptez le message `WM_SIZE` et utilisez `SetWindowText`. Largeur de la fenetre: `LOWORD(lParam)`, hauteur de la fenetre: `HIWORD(lParam)`*
 
 ---
 
