@@ -57,6 +57,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         PostQuitMessage(0);   // Termine la boucle principale
         break;
 
+    // Titre qui change lors de la redimension de la fenetre 
     case WM_SIZE: {
         windowWidth = LOWORD(lParam);
         windowHeight = HIWORD(lParam);
@@ -66,6 +67,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         break;
     }
 
+    // Changement de curseur
     case WM_MOUSEMOVE: {
         int x = LOWORD(lParam);
         int y = HIWORD(lParam);
@@ -74,6 +76,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         else SetCursor(LoadCursor(NULL, IDC_CROSS));
     }
 
+    // Affichage de la dernière touche pressée
     case WM_KEYDOWN: {
         if (wParam == VK_ESCAPE) {
             PostMessage(hwnd, WM_CLOSE, 0, 0);
