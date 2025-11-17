@@ -215,6 +215,7 @@ Mais **GDI+**, intégré dans Windows depuis XP, permet de les charger simplemen
 ```cpp
 #include <gdiplus.h>
 using namespace Gdiplus;
+#pragma comment (lib, "Gdiplus.lib")
 
 ULONG_PTR gdiplusToken;
 GdiplusStartupInput gdiplusStartupInput;
